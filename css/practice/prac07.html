@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 300px;
+            height: 300px;
+            border: 2px solid blue;
+            /* 
+                어떤 요소에 전환효과를 지정하려면 반드시 
+                property 속성과 duration 속성을 함께 사용해야함
+            */
+            transition-property: all;
+            transition-duration: 2s;
+            background-image: url(../../images/ocean.jpg);
+
+            /* animation-name: divani;
+            animation-duration: 1s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite; */
+        }
+
+        div:hover {
+            width: 600px;
+            height: 600px;
+            border-color: red;
+        }
+        
+        /* @keyframes divani {
+            0%{
+                width:300px;
+                height:300px;
+            }
+            100%{
+                width:600px;
+                height:600px;
+                border-color: red;
+            }
+        } */
+    </style>
+</head>
+
+<body>
+    <div>
+    </div>
+</body>
+
+</html>

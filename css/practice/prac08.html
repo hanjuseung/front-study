@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box {
+            width:100px;
+            height: 100px;
+            background-color: blue;
+            margin: 20px;
+
+            position:relative;
+            animation-duration: 4s;
+            animation-iteration-count:infinite;
+        }
+        .box1 {
+            animation-name: moving-left;
+        }
+        .box2 {
+            animation-name: moving-bottom;
+        }
+        .box3 {
+            animation-name: moving-cross;
+        }
+        /* 박스에 마우스를 올려두면 멈춤 */
+        .box:hover {
+            animation-play-state: paused;
+        }
+        /* 왼쪽으로 움직이는 박스 box */
+        @keyframes moving-left {
+            0%{
+                background-color: blue;
+                left:0px;
+            }
+            25%{
+                background-color: orange;
+                left:100px;
+            }
+            50%{
+                background-color: pink;
+                left:200px;
+            }
+            75%{
+                background-color: orange;
+                left:100px;
+            }
+            100%{
+                background-color: blue;
+                left:0px;
+            }
+        }
+        /* 아래로 움직이는 박스 box2 */
+        @keyframes moving-bottom {
+            0%{
+                background-color: blue;
+                top:0px;
+            }
+            25%{
+                background-color: orange;
+                top:100px;
+            }
+            50%{
+                background-color: pink;
+                top:200px;
+            }
+            75%{
+                background-color: orange;
+                top:100px;
+            }
+            100%{
+                background-color: blue;
+                top:0px;
+            }
+        }
+        /* 대각으로 움직이는 박스 box3 */
+        @keyframes moving-cross {
+            0%{
+                background-color: blue;
+                left:0px;
+                top:0px;
+            }
+            25%{
+                background-color: orange;
+                left:100px;
+                top:100px;
+            }
+            50%{
+                background-color: pink;
+                left:200px;
+                top:200px;
+            }
+            75%{
+                background-color: orange;
+                left:100px;
+                top:100px;
+            }
+            100%{
+                background-color: blue;
+                left:0px;
+                top:0px;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+</body>
+</html>
