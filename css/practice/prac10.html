@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box {
+            
+            width:100px;
+            height:100px;
+            background-color: blue;
+            border : 1px solid black;
+            position: relative;
+            /* left:0px; */
+
+            animation-name: rollingbox;
+            animation-duration: 3s;
+            animation-direction: alternate;
+            animation-fill-mode: both;
+            animation-iteration-count: infinite;
+        }
+        @keyframes rollingbox {
+            0%{
+                background-color: blue;
+                /* left:0px; */
+                transform:translateX(0px) rotate(0deg);
+                /* transform:rotate(0deg) translateX(0px) ; */
+
+            }
+            50%{
+                background-color: orange;
+                /* left:200px; */
+                /* rotate: 360deg; */
+                transform:translateX(200px) rotate(360deg);
+                /* transform:rotate(360deg) translateX(200px); */
+            }
+            100%{
+                background-color: pink;
+                /* left:400px; */
+                transform:translateX(400px) rotate(720deg);
+                /* transform:rotate(720deg) translateX(400px); */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
