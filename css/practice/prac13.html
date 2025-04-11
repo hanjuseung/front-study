@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 800px;
+            margin: 0 auto;
+            border: 2px solid black;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            height: 100px;
+            border: 2px solid black;
+        }
+
+        /* ------------------------------------------------- */
+        .head {
+            display: flex;
+            width: 100%;
+        }
+
+        .head1 {
+            background-color: yellow;
+            width: 50%;
+        }
+
+        .head2 {
+            background-color: gray;
+            width: 50%;
+        }
+
+        /* ------------------------------------------------- */
+        .main1 {
+            background-color: purple;
+            width: 100%;
+        }
+
+        .main {
+            display: flex;
+            width: 100%;
+        }
+
+        .main2 {
+            background-color: lightblue;
+            width: 40%;
+            height: 200px;
+        }
+
+        .asd {
+            width: 60%;
+        }
+
+        .main3 {
+            background-color: yellow;
+        }
+
+        .main4 {
+            background-color: pink;
+        }
+
+        /* ------------------------------------------- */
+        .footer {
+            display: flex;
+            width: 800px;
+        }
+
+        .footer1 {
+            background-color: yellow;
+            width: 50%;
+        }
+
+        .footer2 {
+            background-color: orange;
+            width: 50%;
+        }
+
+        .footer3 {
+            background-color: yellow;
+            width: 50%;
+        }
+
+        .footer4 {
+            background-color: green;
+            width: 50%;
+        }
+
+        /* -------------------------------------------- */
+        @media screen and (max-width:700px) {
+            .container {
+                width: 100%;
+                margin: 0 auto;
+                border: 2px solid black;
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+
+        @media screen and (max-width:650px) {
+            .footer {
+                display: flex;
+                width: 100%;
+                flex-wrap: wrap;
+            }
+
+            .footer1 {
+                background-color: yellow;
+                width: 50%;
+            }
+
+            .footer2 {
+                background-color: orange;
+                width: 50%;
+            }
+
+            .footer3 {
+                background-color: yellow;
+                width: 50%;
+            }
+
+            .footer4 {
+                background-color: green;
+                width: 50%;
+            }
+        }
+
+        @media screen and (max-width:500px) {
+            .head {
+                display: block;
+                width: 100%;
+            }
+
+            .head1 {
+                background-color: yellow;
+                width: 100%;
+            }
+
+            .head2 {
+                background-color: gray;
+                width: 100%;
+            }
+
+            .main {
+                display: block;
+                width: 100%;
+            }
+
+            .main2 {
+                background-color: lightblue;
+                width: 100%;
+                height: 200px;
+            }
+
+            .asd {
+                display: flex;
+                width: 100%;
+            }
+
+            .main3 {
+                background-color: yellow;
+                width: 50%;
+            }
+
+            .main4 {
+                background-color: pink;
+                width: 50%;
+            }
+        }
+
+        @media screen and (max-width:350px) {
+            .asd {
+                display: block;
+            }
+
+            .main3 {
+                background-color: yellow;
+                width: 100%;
+            }
+
+            .main4 {
+                background-color: pink;
+                width: 100%;
+            }
+
+            .footer1 {
+                background-color: yellow;
+                width: 100%;
+            }
+
+            .footer2 {
+                background-color: orange;
+                width: 100%;
+            }
+
+            .footer3 {
+                background-color: yellow;
+                width: 100%;
+            }
+
+            .footer4 {
+                background-color: green;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="head">
+            <div class="box head1"></div>
+            <div class="box head2"></div>
+        </div>
+
+        <div class="box main1"></div>
+
+        <div class="main">
+            <div class="box main2"></div>
+            <div class="asd">
+                <div class="box main3"></div>
+                <div class="box main4"></div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="box footer1"></div>
+            <div class="box footer2"></div>
+            <div class="box footer3"></div>
+            <div class="box footer4"></div>
+        </div>
+
+    </div>
+</body>
+
+</html>
