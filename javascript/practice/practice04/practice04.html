@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>달식장 좋아요 <span id="heart" onclick="heart_click()">♡</span><span id="dd"> 0</span></p>
+
+    <script>
+
+        const heartSpan = document.getElementById('heart');
+        let count = 1;
+        function heart_click(){
+            dd.textContent = ' ' + count;
+            count++;
+            //console.log('클릭됨');
+
+            //document.getElementById('cnt').textContent = count;
+            // document.getElementById('heart').textContent = Number(document.getElementById('cnt').textContent) + 1;
+        }
+
+    </script>
+    
+</body>
+</html>

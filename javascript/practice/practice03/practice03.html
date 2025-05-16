@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        #box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- <div id="box" onclick="boxclick()" onmouseover="boxover()"></div> -->
+
+    <div id="box" onclick="box_click()"></div>
+
+
+    <script>
+        /* 코딩 부분 */
+        const box = document.getElementById('box');
+
+        box.onmouseover=()=>{
+            console.log('마우스 올라옴');
+        }
+
+        function box_click(){
+            console.log('마우스 클릭');
+        }
+
+//---------------------------------------------------------
+
+        /* 코딩 부분 */
+        // function boxclick(){
+        //     console.log('클릭됨');
+        // }
+
+        // function boxover(){
+        //     console.log('마우스 올라옴');
+        // }
+
+        // const box = document.getElementById('box');
+        // box.onclick = boxclick;
+        // box.onmouseover = function(){
+        //     console.log('마우스 올라옴');
+        // }
+
+        // document.getElementById('box').addEventListener('mouseover',()=>{
+        //     console.log('마우스 올라옴');
+        // });
+
+        // document.getElementById('box').addEventListener('click',()=>{
+        //     console.log('클릭됨');
+        // });
+
+
+    </script>
+</body>
+
+</html>
